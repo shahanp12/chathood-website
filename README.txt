@@ -1,0 +1,1 @@
+Open index.html to view the site. All assets inline.
