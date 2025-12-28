@@ -2,80 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pricing – Chathood</title>
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
 
+<!-- ================= HEADER ================= -->
 <header class="header">
   <div class="container nav">
-    <a href="/" class="logo">Chathood</a>
+    <a href="/" class="logo">
+      <img src="assets/logo.svg" alt="Chathood" />
+    </a>
+
     <nav>
-      <a href="/">Home</a>
-      <a href="/features">Features</a>
-      <a href="/integrations">Integrations</a>
+      <a href="/index.html">Home</a>
+      <a href="/features.html">Features</a>
+      <a href="/integrations.html">Integrations</a>
       <a href="https://chathood.io/app/auth/signup" class="btn">Get Started</a>
     </nav>
   </div>
 </header>
 
+<!-- ================= PRICING HERO ================= -->
 <section class="section">
   <div class="container">
     <h1>Simple, Transparent Pricing</h1>
     <p class="subtitle">
-      Clear plans designed for startups, growing teams, and enterprises.
-    </p>
-
-    <div class="grid pricing">
-      <div class="card">
-        <h3>Starter</h3>
-        <p class="price">₹3,500 / month</p>
-        <p class="setup">Setup: ₹5,000</p>
-        <ul>
-          <li>1 Admin + 1 Agent</li>
-          <li>Instagram & Facebook</li>
-          <li>Website Live Chat</li>
-          <li>Email Support</li>
-        </ul>
-      </div>
-
-      <div class="card highlight">
-        <h3>Growth</h3>
-        <p class="price">₹7,500 / month</p>
-        <p class="setup">Setup: ₹10,000</p>
-        <ul>
-          <li>Up to 5 Agents</li>
-          <li>WhatsApp Business API</li>
-          <li>Automation Rules</li>
-          <li>Reports & Analytics</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Scale</h3>
-        <p class="price">Custom</p>
-        <p class="setup">Setup: Custom</p>
-        <ul>
-          <li>Unlimited Agents</li>
-          <li>All Channels</li>
-          <li>API & Webhooks</li>
-          <li>Dedicated Support</li>
-        </ul>
-      </div>
-    </div>
-
-    <p style="margin-top:30px;">
-      <strong>Additional inbox:</strong> ₹1,500 / month<br/>
-      <strong>WhatsApp messaging charges:</strong> As per Meta pricing
+      Scalable pricing designed for startups, growing teams, and enterprises.
+      No lock-in. No hidden costs.
     </p>
   </div>
 </section>
 
+<!-- ================= PRICING CARDS ================= -->
+<section class="section light">
+  <div class="container">
+
+    <div class="grid pricing">
+
+      <!-- STARTER -->
+      <div class="card pricing-card">
+        <h3>Starter</h3>
+        <p class="price">₹3,500<span>/month</span></p>
+        <p class="setup">One-time setup: ₹5,000</p>
+
+        <ul>
+          <li>✔ 1 Admin + 1 Agent</li>
+          <li>✔ Instagram & Facebook Pages</li>
+          <li>✔ Website Live Chat</li>
+          <li>✔ Shared Inbox</li>
+          <li>✔ Email Support</li>
+        </ul>
+
+        <a href="https://chathood.io/app/auth/signup" class="btn full">Get Started</a>
+      </div>
+
+      <!-- GROWTH -->
+      <div class="card pricing-card highlight">
+        <h3>Growth</h3>
+        <p class="price">₹7,500<span>/month</span></p>
+        <p class="setup">One-time setup: ₹10,000</p>
+
+        <ul>
+          <li>✔ Up to 5 Agents</li>
+          <li>✔ WhatsApp Business API</li>
+          <li>✔ Automation Rules & Macros</li>
+          <li>✔ Reports & Analytics</li>
+          <li>✔ Priority Support</li>
+        </ul>
+
+        <a href="https://chathood.io/app/auth/signup" class="btn primary full">Start Free Setup</a>
+      </div>
+
+      <!-- SCALE -->
+      <div class="card pricing-card">
+        <h3>Scale</h3>
+        <p class="price">Custom</p>
+        <p class="setup">One-time setup: Custom</p>
+
+        <ul>
+          <li>✔ Unlimited Agents</li>
+          <li>✔ All Channels Enabled</li>
+          <li>✔ APIs & Webhooks</li>
+          <li>✔ AI, Bots & Integrations</li>
+          <li>✔ Dedicated Account Manager</li>
+        </ul>
+
+        <a href="mailto:sales@chathood.io" class="btn outline full">Talk to Sales</a>
+      </div>
+
+    </div>
+
+    <!-- ================= NOTES ================= -->
+    <div class="pricing-notes">
+      <p><strong>Additional inbox:</strong> ₹1,500 / month</p>
+      <p><strong>WhatsApp messaging charges:</strong> As per Meta pricing</p>
+      <p><strong>Custom integrations & bots:</strong> Scoped & billed separately</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
   <div class="container footer-grid">
     <div>© 2026 Chathood</div>
     <div><a href="/">Home</a></div>
-    <div><a href="/features">Features</a></div>
+    <div><a href="/features.html">Features</a></div>
   </div>
 </footer>
 
