@@ -2,48 +2,178 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Integrations – Chathood</title>
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
 
+<!-- ================= HEADER ================= -->
 <header class="header">
   <div class="container nav">
-    <a href="/" class="logo">Chathood</a>
+    <a href="/" class="logo">
+      <img src="assets/logo.svg" alt="Chathood" />
+    </a>
+
     <nav>
-      <a href="/">Home</a>
-      <a href="/features">Features</a>
-      <a href="/pricing">Pricing</a>
+      <a href="/index.html">Home</a>
+      <a href="/features.html">Features</a>
+      <a href="/pricing.html">Pricing</a>
       <a href="https://chathood.io/app/auth/signup" class="btn">Get Started</a>
     </nav>
   </div>
 </header>
 
+<!-- ================= HERO ================= -->
 <section class="section">
   <div class="container">
     <h1>Powerful Integrations</h1>
     <p class="subtitle">
-      Extend Chathood into a complete CPaaS ecosystem using APIs and native integrations.
+      Extend Chathood into a complete CPaaS ecosystem using APIs,
+      automation tools, CRMs, and AI services.
     </p>
+  </div>
+</section>
 
-    <div class="grid cards">
-      <div class="card"><img src="assets/icons/webhook.svg"/><h3>Webhooks</h3><p>Trigger real-time workflows in external systems.</p></div>
-      <div class="card"><img src="assets/icons/dialogflow.svg"/><h3>Dialogflow</h3><p>Build NLP-powered bots and conversational flows.</p></div>
-      <div class="card"><img src="assets/icons/google-translate.svg"/><h3>Google Translate</h3><p>Translate messages automatically for multilingual support.</p></div>
-      <div class="card"><img src="assets/icons/openai.svg"/><h3>OpenAI</h3><p>AI-powered replies, summaries, and automation.</p></div>
-      <div class="card"><img src="assets/icons/leadsquared.svg"/><h3>LeadSquared</h3><p>Sync leads and conversations with your CRM.</p></div>
-      <div class="card"><img src="assets/icons/realtimekit.svg"/><h3>RealtimeKit</h3><p>Enable voice, video, and screen sharing.</p></div>
-      <div class="card"><img src="assets/icons/dashboard.svg"/><h3>Dashboard Apps</h3><p>Embed external dashboards and widgets.</p></div>
-      <div class="card"><img src="assets/icons/automation.svg"/><h3>Automation Tools</h3><p>Connect Zapier, Make, and custom workflows.</p></div>
+<!-- ================= INTEGRATIONS GRID ================= -->
+<section class="section light">
+  <div class="container">
+
+    <div class="grid cards integrations">
+
+      <!-- Webhooks -->
+      <div class="card integration-card">
+        <img src="assets/icons/webhook.svg" alt="Webhooks" />
+        <h3>Webhooks</h3>
+        <p>
+          Trigger real-time events whenever a message is received,
+          updated, assigned, or resolved. Seamlessly connect Chathood
+          with your backend systems, CRMs, ERPs, or custom applications.
+        </p>
+      </div>
+
+      <!-- Dialogflow -->
+      <div class="card integration-card">
+        <img src="assets/icons/dialogflow.svg" alt="Dialogflow" />
+        <h3>Dialogflow</h3>
+        <p>
+          Build intelligent conversational bots using Google Dialogflow.
+          Handle FAQs, collect user inputs, qualify leads, and route
+          conversations to agents when needed.
+        </p>
+      </div>
+
+      <!-- Google Translate -->
+      <div class="card integration-card">
+        <img src="assets/icons/google-translate.svg" alt="Google Translate" />
+        <h3>Google Translate</h3>
+        <p>
+          Automatically translate incoming and outgoing messages in real time.
+          Enable multilingual support so agents and customers can chat
+          in their preferred language.
+        </p>
+      </div>
+
+      <!-- OpenAI -->
+      <div class="card integration-card">
+        <img src="assets/icons/openai.svg" alt="OpenAI" />
+        <h3>OpenAI</h3>
+        <p>
+          Use OpenAI models for AI-powered reply suggestions,
+          conversation summaries, sentiment detection,
+          and automated responses inside the inbox.
+        </p>
+      </div>
+
+      <!-- LeadSquared -->
+      <div class="card integration-card">
+        <img src="assets/icons/leadsquared.svg" alt="LeadSquared" />
+        <h3>LeadSquared</h3>
+        <p>
+          Sync leads, contacts, and conversation activity between
+          Chathood and LeadSquared CRM. Ensure sales and support teams
+          always have up-to-date customer data.
+        </p>
+      </div>
+
+      <!-- RealtimeKit -->
+      <div class="card integration-card">
+        <img src="assets/icons/realtimekit.svg" alt="RealtimeKit" />
+        <h3>RealtimeKit (Voice & Video)</h3>
+        <p>
+          Enable voice calls, video calls, and screen sharing directly
+          from the chat interface for high-touch support and sales use cases.
+        </p>
+      </div>
+
+      <!-- Dashboard Apps -->
+      <div class="card integration-card">
+        <img src="assets/icons/dashboard.svg" alt="Dashboard Apps" />
+        <h3>Dashboard Apps</h3>
+        <p>
+          Embed external dashboards, analytics tools, and internal web apps
+          directly inside Chathood for contextual insights and faster decisions.
+        </p>
+      </div>
+
+      <!-- Automation Tools -->
+      <div class="card integration-card">
+        <img src="assets/icons/automation.svg" alt="Automation Tools" />
+        <h3>Automation Platforms</h3>
+        <p>
+          Connect with platforms like Zapier, Make (Integromat),
+          or custom automation engines to orchestrate workflows
+          across your entire tech stack.
+        </p>
+      </div>
+
     </div>
   </div>
 </section>
 
+<!-- ================= API SECTION ================= -->
+<section class="section">
+  <div class="container">
+    <h2>API-First by Design</h2>
+    <p class="subtitle">
+      Chathood is built for developers, CPaaS providers,
+      and system integrators.
+    </p>
+
+    <div class="grid cards">
+      <div class="card">
+        <h3>REST APIs</h3>
+        <p>
+          Access conversations, contacts, messages, agents,
+          and automation using secure REST APIs.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>On-Behalf Messaging</h3>
+        <p>
+          Send messages on behalf of users or systems using
+          WhatsApp Business API, SMS, or other channels.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Enterprise Integrations</h3>
+        <p>
+          Integrate with CRMs, ticketing systems, ERPs,
+          payment gateways, and internal platforms.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
   <div class="container footer-grid">
     <div>© 2026 Chathood</div>
     <div><a href="/">Home</a></div>
-    <div><a href="/pricing">Pricing</a></div>
+    <div><a href="/pricing.html">Pricing</a></div>
   </div>
 </footer>
 
