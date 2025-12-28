@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- Main bubble -->
+  <path d="M40 56
+       C40 34 58 16 80 16
+       H176
+       C198 16 216 34 216 56
+       V144
+       C216 166 198 184 176 184
+       H96
+       L56 224
+       V184
+       H80
+       C58 184 40 166 40 144
+       Z" fill="#1F93FF"></path>
+
+  <!-- Hut / roof accent -->
+  <path d="M88 56
+       L128 28
+       L168 56
+       Z" fill="#167FE6"></path>
+
+  <!-- Inner dots (conversation feel) -->
+  <circle cx="96" cy="112" r="8" fill="#ffffff"></circle>
+  <circle cx="128" cy="112" r="8" fill="#ffffff"></circle>
+  <circle cx="160" cy="112" r="8" fill="#ffffff"></circle>
+</svg>
