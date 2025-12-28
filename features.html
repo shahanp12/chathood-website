@@ -2,248 +2,153 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Chathood Features – Unified Inbox & CPaaS Dashboard</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chathood Features</title>
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
-
 <body>
-
-<!-- ================= HEADER ================= -->
-<header>
-  <div class="container nav">
-    <img src="assets/logo-white.png" alt="Chathood Logo" />
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="integrations.html">Integrations</a>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">Chathood</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="integrations.html">Integrations</a>
+        <a href="https://app.chathood.ai/signup" class="btn btn-small">Get Started</a>
+      </nav>
     </div>
-  </div>
-</header>
+  </header>
 
-<!-- ================= INTRO ================= -->
-<section>
-  <div class="container">
-    <div class="section-title" data-animate>
-      <h2>One Inbox. Complete Control.</h2>
-      <p>
-        Chathood centralizes every customer interaction into a single,
-        real-time workspace — giving teams clarity, speed, and structure
-        across all communication channels.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- ================= INBOX CHANNELS ================= -->
-<section>
-  <div class="container">
-    <div class="section-title" data-animate>
-      <h2>Omnichannel Inbox</h2>
-      <p>
-        Every channel your customers use flows into one unified inbox —
-        eliminating silos and missed conversations.
-      </p>
-    </div>
-
-    <div class="grid">
-      <div class="card channel" data-animate>
-        <img src="assets/icons/whatsapp.svg" />
-        <div>
-          <h3>WhatsApp Business API</h3>
-          <p>Official API conversations, templates, campaigns, and automation.</p>
-        </div>
+  <!-- Unified Inbox & Conversations -->
+  <!-- Based on Chathood Deck:contentReference[oaicite:7]{index=7} -->
+  <section class="feature">
+    <div class="container feature-content">
+      <div class="text">
+        <h2>Unified Inbox & Conversations</h2>
+        <p>See all active customer conversations across every channel in real time. Messages are intelligently grouped and prioritized, so no inquiry slips through unnoticed:contentReference[oaicite:8]{index=8}.</p>
       </div>
-
-      <div class="card channel" data-animate="delay-1">
-        <img src="assets/icons/instagram.svg" />
-        <div>
-          <h3>Instagram DMs</h3>
-          <p>Manage messages and comments directly from one dashboard.</p>
-        </div>
-      </div>
-
-      <div class="card channel" data-animate="delay-2">
-        <img src="assets/icons/facebook.svg" />
-        <div>
-          <h3>Facebook Pages</h3>
-          <p>Respond to page messages with team collaboration.</p>
-        </div>
-      </div>
-
-      <div class="card channel" data-animate>
-        <img src="assets/icons/telegram.svg" />
-        <div>
-          <h3>Telegram</h3>
-          <p>Handle Telegram conversations alongside other channels.</p>
-        </div>
-      </div>
-
-      <div class="card channel" data-animate="delay-1">
-        <img src="assets/icons/line.svg" />
-        <div>
-          <h3>LINE</h3>
-          <p>Support LINE messaging for regional and global audiences.</p>
-        </div>
-      </div>
-
-      <div class="card channel" data-animate="delay-2">
-        <img src="assets/icons/email.svg" />
-        <div>
-          <h3>Email</h3>
-          <p>Turn emails into threaded conversations with full context.</p>
-        </div>
-      </div>
-
-      <div class="card channel" data-animate>
-        <img src="assets/icons/sms.svg" />
-        <div>
-          <h3>SMS</h3>
-          <p>Transactional and fallback messaging directly from the inbox.</p>
-        </div>
-      </div>
-
-      <div class="card channel" data-animate="delay-1">
-        <img src="assets/icons/webchat.svg" />
-        <div>
-          <h3>Website Live Chat</h3>
-          <p>Capture leads and support visitors in real time.</p>
-        </div>
-      </div>
-
-      <div class="card channel" data-animate="delay-2">
-        <img src="assets/icons/api.svg" />
-        <div>
-          <h3>API Inbox</h3>
-          <p>Bring custom applications and systems into Chathood.</p>
-        </div>
+      <div class="image">
+        <img src="assets/images/inbox.png" alt="Unified Inbox"/>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================= CORE DASHBOARD ================= -->
-<section>
-  <div class="container">
-    <div class="section-title" data-animate>
-      <h2>Core Dashboard Features</h2>
-      <p>
-        Chathood is designed around real operational needs —
-        helping teams work faster without losing context or control.
-      </p>
-    </div>
-
-    <div class="grid">
-      <div class="card" data-animate>
-        <h3>Unified Conversations</h3>
-        <p>
-          View all assigned, unassigned, and unattended conversations in one
-          organized timeline with full message history and context.
-        </p>
+  <!-- Contacts & CRM -->
+  <!-- Based on Chathood Deck:contentReference[oaicite:9]{index=9} -->
+  <section class="feature alternate">
+    <div class="container feature-content">
+      <div class="image">
+        <img src="assets/images/contacts.png" alt="Contacts Dashboard"/>
       </div>
-
-      <div class="card" data-animate="delay-1">
-        <h3>Contacts & Profiles</h3>
-        <p>
-          Maintain a lightweight CRM with customer details, conversation
-          history, tags, and attributes.
-        </p>
-      </div>
-
-      <div class="card" data-animate="delay-2">
-        <h3>Labels & Segmentation</h3>
-        <p>
-          Categorize conversations using labels that power reporting and
-          automation.
-        </p>
-      </div>
-
-      <div class="card" data-animate>
-        <h3>Automation Rules</h3>
-        <p>
-          Automatically assign conversations, apply labels, and trigger
-          workflows based on conditions.
-        </p>
-      </div>
-
-      <div class="card" data-animate="delay-1">
-        <h3>Bots & AI Assistants</h3>
-        <p>
-          Use bots to collect information, route conversations, and provide
-          instant responses before agents step in.
-        </p>
-      </div>
-
-      <div class="card" data-animate="delay-2">
-        <h3>Macros & Canned Responses</h3>
-        <p>
-          Speed up replies using one-click actions and pre-approved responses
-          for consistent communication.
-        </p>
+      <div class="text">
+        <h2>Contacts & Profiles</h2>
+        <p>Every customer is stored with their profile, contact details, and message history:contentReference[oaicite:10]{index=10}. Agents get full context to personalize interactions and improve customer satisfaction.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================= OPERATIONS & REPORTS ================= -->
-<section>
-  <div class="container">
-    <div class="section-title" data-animate>
-      <h2>Operations, Reporting & Control</h2>
-      <p>
-        Gain real-time visibility into performance, workloads, and customer
-        satisfaction.
-      </p>
-    </div>
-
-    <div class="grid">
-      <div class="card" data-animate>
-        <h3>Live Reports & Analytics</h3>
-        <p>
-          Track conversation traffic, agent performance, CSAT, SLAs, and inbox
-          distribution in real time.
-        </p>
+  <!-- Teams & Roles -->
+  <!-- Based on Chathood Deck:contentReference[oaicite:11]{index=11}:contentReference[oaicite:12]{index=12} -->
+  <section class="feature">
+    <div class="container feature-content">
+      <div class="text">
+        <h2>Teams, Roles & Assignment</h2>
+        <p>Group agents into teams (Support, Sales, etc.) and route conversations to the right experts:contentReference[oaicite:13]{index=13}. Set role-based permissions (Admin vs Agent) to control access and ensure secure team management:contentReference[oaicite:14]{index=14}.</p>
       </div>
-
-      <div class="card" data-animate="delay-1">
-        <h3>Teams & Roles</h3>
-        <p>
-          Organize agents into teams, define responsibilities, and control
-          access with role-based permissions.
-        </p>
-      </div>
-
-      <div class="card" data-animate="delay-2">
-        <h3>Campaigns</h3>
-        <p>
-          Send proactive WhatsApp, SMS, and chat campaigns for onboarding,
-          alerts, and re-engagement.
-        </p>
+      <div class="image">
+        <img src="assets/images/teams.png" alt="Teams and Roles"/>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================= FOOTER ================= -->
-<footer>
-  <div class="container footer-grid">
-    <div>
-      <img src="assets/logo-white.png" style="height:36px" />
-      <p>Unified Conversations for Modern Teams.</p>
+  <!-- Macros & Automation -->
+  <!-- Based on Chathood Deck:contentReference[oaicite:15]{index=15}:contentReference[oaicite:16]{index=16}:contentReference[oaicite:17]{index=17} -->
+  <section class="feature alternate">
+    <div class="container feature-content">
+      <div class="image">
+        <img src="assets/images/automation.png" alt="Automation Rules"/>
+      </div>
+      <div class="text">
+        <h2>Macros, Canned Responses & Automation</h2>
+        <p>Build macros (multi-step shortcuts) and canned responses to eliminate repetitive tasks:contentReference[oaicite:18]{index=18}:contentReference[oaicite:19]{index=19}. Create automation rules to auto-assign, tag, or reply to conversations, letting routine work happen in the background:contentReference[oaicite:20]{index=20}.</p>
+      </div>
     </div>
+  </section>
 
-    <div>
-      <p><strong>Company</strong></p>
-      <a href="/privacy-policy/">Privacy Policy</a><br />
-      <a href="/terms/">Terms of Service</a><br />
-      <a href="/data-deletion/">Data Deletion</a>
+  <!-- Campaigns & Notifications -->
+  <!-- Based on Chathood Deck:contentReference[oaicite:21]{index=21} -->
+  <section class="feature">
+    <div class="container feature-content">
+      <div class="text">
+        <h2>Campaigns & Notifications</h2>
+        <p>Send proactive outbound messages via WhatsApp, SMS, and web chat. Track delivery and status for promotions, reminders, and re-engagement campaigns:contentReference[oaicite:22]{index=22}.</p>
+      </div>
+      <div class="image">
+        <img src="assets/images/campaigns.png" alt="Campaigns"/>
+      </div>
     </div>
+  </section>
 
-    <div>
-      <p><strong>Support</strong></p>
-      <p>support@chathood.io</p>
+  <!-- Reports & Analytics -->
+  <!-- Based on Chathood Deck:contentReference[oaicite:23]{index=23}:contentReference[oaicite:24]{index=24} -->
+  <section class="feature alternate">
+    <div class="container feature-content">
+      <div class="image">
+        <img src="assets/images/reports.png" alt="Analytics Dashboard"/>
+      </div>
+      <div class="text">
+        <h2>Reports & Analytics</h2>
+        <p>Get deep visibility into workloads, team performance, and customer satisfaction:contentReference[oaicite:25]{index=25}. Monitor open/unattended messages, peak traffic times, agent performance, SLAs, CSAT, and more to continuously improve service quality:contentReference[oaicite:26]{index=26}.</p>
+      </div>
     </div>
-  </div>
-</footer>
+  </section>
 
+  <!-- Bots & AI Assistants -->
+  <!-- Based on Chathood Deck:contentReference[oaicite:27]{index=27} -->
+  <section class="feature">
+    <div class="container feature-content">
+      <div class="text">
+        <h2>Bots & AI Assistants</h2>
+        <p>Integrate AI-powered bots to handle initial customer queries. Bots (via webhooks or AI services) can collect info and answer common questions before routing to a human:contentReference[oaicite:28]{index=28}. This improves response times and keeps agents focused on complex tasks.</p>
+      </div>
+      <div class="image">
+        <img src="assets/images/bots.png" alt="AI Chatbot"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dashboard & Live Tools -->
+  <!-- Based on Chathood Deck:contentReference[oaicite:29]{index=29} -->
+  <section class="feature alternate">
+    <div class="container feature-content">
+      <div class="image">
+        <img src="assets/images/dashboard.png" alt="Live Dashboard"/>
+      </div>
+      <div class="text">
+        <h2>Dashboards & Live Agent Tools</h2>
+        <p>Track live agent status (Online, Busy, Away) and use integrated co-browsing, voice, and video tools (via RealtimeKit) for richer support:contentReference[oaicite:30]{index=30}. Embed custom dashboard apps to visualize data in real time.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Chathood</h4>
+        <p><a href="mailto:contact@chathood.ai">contact@chathood.ai</a></p>
+        <p>&copy; 2026 Chathood</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="integrations.html">Integrations</a></p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="mailto:support@chathood.ai">support@chathood.ai</a></p>
+        <p>+1 (123) 456-7890</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
