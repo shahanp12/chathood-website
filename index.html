@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Chathood – Unified Omnichannel CPaaS</title>
-  <link rel="stylesheet" href="assets/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/styles.css">
 </head>
 
 <body>
 
 <header class="header">
   <div class="container">
-    <a href="/" class="logo">Chathood</a>
+    <a href="/" class="logo">
+      <img src="/assets/logo.svg" alt="Chathood">
+    </a>
     <nav class="nav">
       <a href="/features">Features</a>
       <a href="/integrations">Integrations</a>
+      <a href="/pricing">Pricing</a>
       <a href="https://chathood.io/app/auth/signup" class="btn btn-small">Get Started</a>
     </nav>
   </div>
@@ -23,79 +26,53 @@
 <section class="hero">
   <div class="container hero-grid">
     <div>
-      <h1>Unified Conversations for Modern Teams</h1>
+      <h1>Unified Conversations<br>for Modern Teams</h1>
       <p>
-        Chathood is an enterprise-ready CPaaS that brings WhatsApp, Instagram,
-        Facebook, Telegram, LINE, Email, SMS, Website Chat, and APIs into one
-        powerful inbox.
+        Chathood is an enterprise-ready CPaaS platform that unifies WhatsApp,
+        Instagram, Facebook, Telegram, LINE, Email, SMS, Website Chat,
+        and APIs into a single powerful inbox.
       </p>
-      <div class="hero-actions">
+      <div class="hero-buttons">
         <a href="/features" class="btn">Explore Features</a>
-        <a href="https://chathood.io/app/auth/signup" class="btn btn-outline">Get Started</a>
+        <a href="/pricing" class="btn btn-outline">View Pricing</a>
       </div>
     </div>
-    <img src="assets/images/hero-hijab.jpg" alt="Modern CPaaS professionals" />
+    <img src="/assets/hero.png" alt="CPaaS Platform">
   </div>
 </section>
 
 <section class="channels">
-  <div class="container grid">
-    <div><img src="assets/icons/whatsapp.svg"><span>WhatsApp API</span></div>
-    <div><img src="assets/icons/instagram.svg"><span>Instagram</span></div>
-    <div><img src="assets/icons/facebook.svg"><span>Facebook Pages</span></div>
-    <div><img src="assets/icons/telegram.svg"><span>Telegram</span></div>
-    <div><img src="assets/icons/line.svg"><span>LINE</span></div>
-    <div><img src="assets/icons/email.svg"><span>Email</span></div>
-    <div><img src="assets/icons/sms.svg"><span>SMS</span></div>
-    <div><img src="assets/icons/chat.svg"><span>Website Chat</span></div>
-    <div><img src="assets/icons/api.svg"><span>API Inbox</span></div>
-  </div>
-</section>
-
-<section class="security">
-  <div class="container">
-    <h2>Security & Reliability Built-In</h2>
-    <ul>
-      <li>HTTPS & secure domain configuration</li>
-      <li>Role-based access control & audit logs</li>
-      <li>Encrypted storage & backups</li>
-      <li>Self-hosted or managed cloud deployment</li>
-    </ul>
+  <div class="container channels-grid">
+    <div><img src="/assets/icons/whatsapp.svg"><span>WhatsApp API</span></div>
+    <div><img src="/assets/icons/instagram.svg"><span>Instagram</span></div>
+    <div><img src="/assets/icons/facebook.svg"><span>Facebook Pages</span></div>
+    <div><img src="/assets/icons/telegram.svg"><span>Telegram</span></div>
+    <div><img src="/assets/icons/line.svg"><span>LINE</span></div>
+    <div><img src="/assets/icons/email.svg"><span>Email</span></div>
+    <div><img src="/assets/icons/sms.svg"><span>SMS</span></div>
+    <div><img src="/assets/icons/chat.svg"><span>Website Chat</span></div>
+    <div><img src="/assets/icons/api.svg"><span>API Inbox</span></div>
   </div>
 </section>
 
 <footer class="footer">
   <div class="container footer-grid">
     <div>
-      <strong>Chathood</strong>
-      <p>support@chathood.io</p>
+      <img src="/assets/logo.svg" height="32">
+      <p>Unified Conversations for Modern Businesses.</p>
     </div>
     <div>
+      <strong>Product</strong><br>
       <a href="/features">Features</a><br>
-      <a href="/integrations">Integrations</a>
+      <a href="/integrations">Integrations</a><br>
+      <a href="/pricing">Pricing</a>
     </div>
     <div>
-      <a href="/privacy-policy/">Privacy Policy</a><br>
-      <a href="/terms/">Terms</a>
+      <strong>Contact</strong><br>
+      support@chathood.io
     </div>
   </div>
 </footer>
-
-<!-- Chatwoot Widget -->
-<script>
-(function(d,t){
-  var BASE_URL="https://chathood.io";
-  var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-  g.src=BASE_URL+"/packs/js/sdk.js"; g.async=true;
-  s.parentNode.insertBefore(g,s);
-  g.onload=function(){
-    window.chatwootSDK.run({
-      websiteToken:'ddcHd7mkk8VLrPvCAouLkT51',
-      baseUrl:BASE_URL
-    })
-  }
-})(document,"script");
-</script>
 
 </body>
 </html>
