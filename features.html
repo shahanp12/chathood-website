@@ -2,103 +2,297 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Features – Chathood</title>
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
 
+<!-- ================= HEADER ================= -->
 <header class="header">
   <div class="container nav">
-    <a href="/" class="logo">Chathood</a>
+    <a href="/" class="logo">
+      <img src="assets/logo.svg" alt="Chathood" />
+    </a>
+
     <nav>
-      <a href="/">Home</a>
-      <a href="/integrations">Integrations</a>
-      <a href="/pricing">Pricing</a>
+      <a href="/index.html">Home</a>
+      <a href="/integrations.html">Integrations</a>
+      <a href="/pricing.html">Pricing</a>
       <a href="https://chathood.io/app/auth/signup" class="btn">Get Started</a>
     </nav>
   </div>
 </header>
 
+<!-- ================= HERO ================= -->
 <section class="section">
   <div class="container">
     <h1>Everything Your Team Needs</h1>
     <p class="subtitle">
-      Every inbox, every workflow, one powerful unified dashboard.
+      One powerful dashboard to manage conversations, automation, agents,
+      customers, and performance — across every channel.
+    </p>
+  </div>
+</section>
+
+<!-- ================= UNIFIED INBOX ================= -->
+<section class="section light">
+  <div class="container">
+    <h2>Unified Inbox</h2>
+    <p class="subtitle">
+      Handle all customer conversations from one place — without switching tools.
     </p>
 
     <div class="grid cards">
       <div class="card">
-        <h3>Unified Inbox</h3>
+        <h3>All Channels in One Timeline</h3>
         <p>
-          View and reply to WhatsApp, Instagram, Facebook, Telegram,
-          Email, SMS, Website Chat, and API messages in one place.
+          Respond to WhatsApp Business API, Instagram DMs, Facebook Pages,
+          Telegram, LINE, Email, SMS, Website Live Chat, and API-generated
+          messages from a single inbox.
         </p>
       </div>
 
       <div class="card">
-        <h3>Contacts & CRM</h3>
+        <h3>Full Conversation Context</h3>
         <p>
-          Maintain detailed customer profiles with attributes,
-          conversation history, and lifecycle context.
+          View customer history, previous conversations, tags, and attributes
+          alongside every message to respond faster and smarter.
         </p>
       </div>
 
       <div class="card">
-        <h3>Teams & Roles</h3>
+        <h3>Assignment & Routing</h3>
         <p>
-          Create teams, assign agents, control permissions,
-          and manage workloads efficiently.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Automation</h3>
-        <p>
-          Build automation rules, macros, and workflows
-          to reduce manual effort and speed up responses.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Campaigns</h3>
-        <p>
-          Run WhatsApp template campaigns and SMS broadcasts
-          with delivery and status tracking.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Reports & Analytics</h3>
-        <p>
-          Track SLA, CSAT, response time, agent performance,
-          and conversation volume in real time.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>AI Assist</h3>
-        <p>
-          Use OpenAI and chatbot integrations for
-          reply suggestions, summaries, and automation.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Security</h3>
-        <p>
-          Enterprise-grade security with role-based access,
-          encrypted storage, and audit-ready logs.
+          Automatically or manually assign conversations to agents or teams
+          based on availability, rules, or skills.
         </p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ================= CONTACTS & CRM ================= -->
+<section class="section">
+  <div class="container">
+    <h2>Contacts & CRM</h2>
+    <p class="subtitle">
+      Know your customers better with built-in CRM capabilities.
+    </p>
+
+    <div class="grid cards">
+      <div class="card">
+        <h3>Unified Customer Profiles</h3>
+        <p>
+          Automatically create and manage customer profiles with names,
+          phone numbers, email addresses, and custom attributes.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Conversation History</h3>
+        <p>
+          Access complete chat history across channels to maintain continuity
+          and deliver personalized responses.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Lifecycle Tracking</h3>
+        <p>
+          Track customers from first contact to conversion, support,
+          and long-term engagement.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TEAMS & ROLES ================= -->
+<section class="section light">
+  <div class="container">
+    <h2>Teams & Roles</h2>
+    <p class="subtitle">
+      Manage agents, permissions, and workloads at scale.
+    </p>
+
+    <div class="grid cards">
+      <div class="card">
+        <h3>Role-Based Access</h3>
+        <p>
+          Define roles for admins, supervisors, agents, and custom users
+          with granular permission controls.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Team Management</h3>
+        <p>
+          Organize agents into teams such as Sales, Support, Finance,
+          or Operations for better routing and accountability.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Agent Performance</h3>
+        <p>
+          Track response times, resolution rates, and workload distribution
+          across agents and teams.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AUTOMATION ================= -->
+<section class="section">
+  <div class="container">
+    <h2>Automation & Bots</h2>
+    <p class="subtitle">
+      Reduce manual work and scale conversations effortlessly.
+    </p>
+
+    <div class="grid cards">
+      <div class="card">
+        <h3>Automation Rules</h3>
+        <p>
+          Trigger actions based on message content, channel, time,
+          customer attributes, or events.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Chatbots & Flows</h3>
+        <p>
+          Build conversational bots using Dialogflow or custom logic
+          to handle FAQs, lead capture, and routing.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Macros & Quick Replies</h3>
+        <p>
+          Save time with predefined responses, templates, and shortcuts
+          for agents.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CAMPAIGNS ================= -->
+<section class="section light">
+  <div class="container">
+    <h2>Campaigns & Outreach</h2>
+    <p class="subtitle">
+      Reach customers proactively using approved messaging channels.
+    </p>
+
+    <div class="grid cards">
+      <div class="card">
+        <h3>WhatsApp Template Campaigns</h3>
+        <p>
+          Send approved WhatsApp message templates for promotions,
+          notifications, reminders, and alerts.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>SMS Broadcasts</h3>
+        <p>
+          Deliver critical messages using SMS as a fallback or
+          secondary communication channel.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Delivery Tracking</h3>
+        <p>
+          Monitor delivery status, failures, and engagement
+          across campaigns.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ANALYTICS ================= -->
+<section class="section">
+  <div class="container">
+    <h2>Reports & Analytics</h2>
+    <p class="subtitle">
+      Make data-driven decisions with real-time insights.
+    </p>
+
+    <div class="grid cards">
+      <div class="card">
+        <h3>Live Dashboards</h3>
+        <p>
+          View conversation volume, response times, and agent activity
+          in real time.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>SLA & CSAT</h3>
+        <p>
+          Track service-level agreements and customer satisfaction
+          metrics across teams.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Export & Analysis</h3>
+        <p>
+          Export reports for audits, reviews, and performance analysis.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECURITY ================= -->
+<section class="section light">
+  <div class="container">
+    <h2>Security & Compliance</h2>
+    <p class="subtitle">
+      Built with enterprise-grade security at its core.
+    </p>
+
+    <div class="grid cards">
+      <div class="card">
+        <h3>Data Protection</h3>
+        <p>
+          Encrypted storage, secure access controls, and audit-ready logs
+          to meet enterprise security requirements.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Deployment Flexibility</h3>
+        <p>
+          Deploy Chathood on cloud infrastructure or self-hosted
+          environments based on your compliance needs.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>API & Webhooks</h3>
+        <p>
+          Integrate deeply with external systems using secure APIs
+          and real-time webhooks.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
   <div class="container footer-grid">
     <div>© 2026 Chathood</div>
     <div><a href="/">Home</a></div>
-    <div><a href="/pricing">Pricing</a></div>
+    <div><a href="/pricing.html">Pricing</a></div>
   </div>
 </footer>
 
