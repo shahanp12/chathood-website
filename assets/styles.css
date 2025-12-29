@@ -6,14 +6,15 @@
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
 /* ================= ROOT ================= */
 :root {
   --primary: #1f7ae0;
+  --primary-dark: #1768c7;
   --dark: #0f172a;
   --text: #334155;
   --light: #f8fafc;
@@ -21,7 +22,7 @@ img {
   --radius: 14px;
 }
 
-/* ================= BODY ================= */
+/* ================= BASE ================= */
 html, body {
   height: 100%;
 }
@@ -35,10 +36,10 @@ body {
   flex-direction: column;
 }
 
-/* ================= CONTAINERS ================= */
+/* ================= CONTAINER ================= */
 .container {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
   padding: 0 24px;
 }
 
@@ -56,7 +57,8 @@ body {
 }
 
 .logo img {
-  height: 34px; /* FIXED LOGO SIZE */
+  height: 34px;              /* FIXED LOGO SIZE */
+  width: auto;
 }
 
 /* ================= NAV ================= */
@@ -75,6 +77,7 @@ nav a {
   border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
+  display: inline-block;
 }
 
 .btn.outline {
@@ -93,6 +96,58 @@ nav a {
   margin-top: 20px;
 }
 
+/* ================= HERO ================= */
+.hero {
+  padding: 90px 0 70px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.hero-content p {
+  margin-bottom: 16px;
+}
+
+.hero-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+
+.hero-card ul {
+  list-style: none;
+  margin-top: 12px;
+}
+
+.hero-card li {
+  margin-bottom: 10px;
+}
+
+/* ================= CHANNEL ICON STRIP ================= */
+.channels {
+  padding: 24px 0 12px;
+}
+
+.grid-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.grid-logos img {
+  width: 44px;          /* UNICHAT-LIKE SIZE */
+  height: 44px;
+  object-fit: contain;
+  opacity: 0.95;
+}
+
 /* ================= SECTIONS ================= */
 .section {
   padding: 80px 0;
@@ -102,6 +157,7 @@ nav a {
   background: var(--light);
 }
 
+/* ================= TYPOGRAPHY ================= */
 h1 {
   font-size: 42px;
   margin-bottom: 16px;
@@ -144,7 +200,7 @@ h3 {
   border: 1px solid var(--border);
 }
 
-/* 🔒 ICON SAFETY (CRITICAL FIX) */
+/* 🔒 ICON SAFETY (CRITICAL) */
 .card img {
   max-width: 48px;
   height: auto;
@@ -194,8 +250,8 @@ h3 {
 .footer {
   background: var(--primary);
   color: #fff;
-  padding: 24px 0;
-  margin-top: auto; /* FIX WHITE GAP */
+  padding-top: 24px;
+  margin-top: auto; /* PREVENT WHITE GAP */
 }
 
 .footer-grid {
@@ -210,7 +266,8 @@ h3 {
 }
 
 .footer-bottom {
+  background: var(--primary-dark);
   text-align: center;
-  margin-top: 16px;
+  padding: 14px 0;
   font-size: 14px;
 }
