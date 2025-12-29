@@ -22,11 +22,17 @@ img {
 }
 
 /* ================= BODY ================= */
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
   color: var(--text);
   background: #ffffff;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ================= CONTAINERS ================= */
@@ -50,9 +56,10 @@ body {
 }
 
 .logo img {
-  height: 36px;
+  height: 34px; /* FIXED LOGO SIZE */
 }
 
+/* ================= NAV ================= */
 nav a {
   margin-left: 24px;
   text-decoration: none;
@@ -60,6 +67,7 @@ nav a {
   font-weight: 500;
 }
 
+/* ================= BUTTONS ================= */
 .btn {
   background: var(--primary);
   color: #fff;
@@ -136,8 +144,10 @@ h3 {
   border: 1px solid var(--border);
 }
 
+/* 🔒 ICON SAFETY (CRITICAL FIX) */
 .card img {
-  max-width: 64px;
+  max-width: 48px;
+  height: auto;
   margin-bottom: 16px;
 }
 
@@ -185,6 +195,7 @@ h3 {
   background: var(--primary);
   color: #fff;
   padding: 24px 0;
+  margin-top: auto; /* FIX WHITE GAP */
 }
 
 .footer-grid {
@@ -196,4 +207,10 @@ h3 {
 .footer a {
   color: #fff;
   text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
 }
