@@ -53,11 +53,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: 96px;
 }
 
 .logo img {
-  height: 56px;              /* FIXED LOGO SIZE */
+  height: 72px;              /* FIXED LOGO SIZE */
   width: auto;
 }
 
