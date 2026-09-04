@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#35a7ff"/><stop offset="1" stop-color="#1768c7"/></linearGradient></defs><path d="M24 57C24 35 42 18 64 18c20 0 36 13 40 31 4 20-7 38-26 45-10 4-20 3-29-1l-17 9 4-16C29 80 24 69 24 57Z" fill="url(#g)"/><path d="M36 59c0-13 11-24 25-24 12 0 22 7 25 18 3 12-3 24-14 29-8 4-17 3-24-1l-11 5 3-10c-3-5-4-11-4-17Z" fill="#fff" opacity=".95"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">Chathood hood mark</title>
+  <desc id="desc">A premium blue hood or cap above a rounded chat bubble with a speech tail.</desc>
+  <defs>
+    <linearGradient id="hoodBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#35a8ff"/>
+      <stop offset="1" stop-color="#1768c7"/>
+    </linearGradient>
+  </defs>
+  <!-- The hood / cap: deliberately separate from the bubble, with the signature white sweep between them. -->
+  <path d="M17 55C18 33 36 13 59 8c23 5 42 25 44 47-7-9-16-14-26-16-6-2-12-3-18-3-18 0-33 7-42 19Z" fill="url(#hoodBlue)"/>
+  <!-- Main Chathood conversation bubble -->
+  <path d="M24 70c0-18 15-32 34-32s34 14 34 32-15 32-34 32c-6 0-12-1-17-4l-12 7 3-12c-5-6-8-14-8-23Z" fill="url(#hoodBlue)"/>
+</svg>
