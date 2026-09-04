@@ -1,151 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Integrations – Chathood</title>
-  <link rel="stylesheet" href="assets/styles.css" />
-  <!-- Favicons -->
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
-</head>
-<body>
-
-<!-- ================= HEADER ================= -->
-<header class="header">
-  <div class="container nav">
-    <a href="/index.html" class="logo">
-      <img src="assets/logo.png" alt="Chathood" />
-    </a>
-
-    <nav>
-      <a href="/">Home</a>
-      <a href="/features">Features</a>
-      <a href="/pricing">Pricing</a>
-      <a href="https://chathood.io/app/auth/signup" class="btn">Get Started</a>
-    </nav>
-  </div>
-</header>
-
-<!-- ================= HERO (FIXED) ================= -->
-<section class="hero">
-  <div class="container">
-    <h1>Powerful Integrations</h1>
-    <p class="subtitle">
-      Extend Chathood into a complete CPaaS ecosystem using APIs,
-      automation tools, CRMs, and AI services.
-    </p>
-  </div>
-</section>
-
-<!-- ================= INTEGRATIONS GRID ================= -->
-<section class="section light">
-  <div class="container">
-    <div class="grid cards">
-
-      <div class="card">
-        <img src="assets/icons/webhook.svg" alt="Webhooks" />
-        <h3>Webhooks</h3>
-        <p>
-          Trigger real-time events whenever a message is received,
-          updated, assigned, or resolved.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="assets/icons/dialogflow.svg" alt="Dialogflow" />
-        <h3>Dialogflow</h3>
-        <p>
-          Build intelligent conversational bots to handle FAQs,
-          qualify leads, and route conversations.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="assets/icons/google-translate.svg" alt="Google Translate" />
-        <h3>Google Translate</h3>
-        <p>
-          Automatically translate messages in real time for
-          multilingual customer support.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="assets/icons/openai.svg" alt="OpenAI" />
-        <h3>OpenAI</h3>
-        <p>
-          AI-powered reply suggestions, summaries,
-          sentiment detection, and automation.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="assets/icons/leadsquared.svg" alt="LeadSquared" />
-        <h3>LeadSquared</h3>
-        <p>
-          Sync leads, contacts, and conversation activity
-          with your CRM in real time.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="assets/icons/realtimekit.svg" alt="RealtimeKit" />
-        <h3>RealtimeKit</h3>
-        <p>
-          Enable voice calls, video calls, and screen sharing
-          directly from conversations.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="assets/icons/dashboard.svg" alt="Dashboard Apps" />
-        <h3>Dashboard Apps</h3>
-        <p>
-          Embed analytics dashboards and internal tools
-          inside Chathood.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="assets/icons/automation.svg" alt="Automation Tools" />
-        <h3>Automation Platforms</h3>
-        <p>
-          Connect Zapier, Make, or custom engines
-          to orchestrate workflows.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>© 2026 Chathood Inc</div>
-    <div><a href="/">Home</a></div>
-    <div><a href="/pricing">Pricing</a></div>
-  </div>
-</footer>
-
-<!-- ================= CHATWOOT WIDGET ================= -->
-<script>
-(function(d,t){
-  var BASE_URL="https://chathood.io";
-  var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-  g.src=BASE_URL+"/packs/js/sdk.js";
-  g.async=true;
-  s.parentNode.insertBefore(g,s);
-  g.onload=function(){
-    window.chatwootSDK.run({
-      websiteToken: 'ErPBKncrz8yw1uJPZHE6NNdm',
-      baseUrl:BASE_URL
-    })
-  }
-})(document,"script");
-</script>
-  
-</body>
-</html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><meta name="description" content="Connect Chathood with messaging channels, AI services, CRMs, automation platforms, APIs and real-time communication tools."/><title>Integrations — Chathood</title><link rel="stylesheet" href="assets/styles.css"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/></head><body>
+<header class="header"><div class="container nav"><a href="/" class="logo"><img src="assets/logo.png" alt="Chathood"/></a><nav aria-label="Primary navigation"><a href="/">Home</a><a href="/features">Features</a><a href="/pricing">Pricing</a><a href="https://chathood.io/app/auth/signup" class="btn">Get Started</a></nav></div></header>
+<main><section class="hero"><div class="container"><span class="eyebrow">Connected ecosystem</span><h1>Plug Chathood into the stack you already use.</h1><p class="subtitle">Extend the conversation layer with APIs, webhooks, automation platforms, CRM systems, AI services and real-time communication.</p></div></section>
+<section class="section light"><div class="container"><div class="section-head"><span class="eyebrow">Integrations</span><h2>From channel to action.</h2><p class="subtitle">Use Chathood as the operational centre for customer conversations while connecting the systems that make your business run.</p></div><div class="grid cards">
+<div class="card"><img class="card-icon" src="assets/icons/webhook.svg" alt="Webhooks"/><div class="number">EVENTS</div><h3>Webhooks</h3><p>Send conversation events to your own services and trigger real-time workflows around customer activity.</p></div>
+<div class="card"><img class="card-icon" src="assets/icons/dialogflow.svg" alt="Dialogflow"/><div class="number">CONVERSATIONAL AI</div><h3>Dialogflow</h3><p>Connect conversational flows for FAQs, lead qualification and guided customer interactions.</p></div>
+<div class="card"><img class="card-icon" src="assets/icons/google-translate.svg" alt="Google Translate"/><div class="number">LANGUAGE</div><h3>Google Translate</h3><p>Support multilingual workflows where message translation is part of the customer experience.</p></div>
+<div class="card"><img class="card-icon" src="assets/icons/openai.svg" alt="OpenAI"/><div class="number">AI</div><h3>OpenAI</h3><p>Connect AI-powered workflows for assistance, summaries and other conversation use cases.</p></div>
+<div class="card"><img class="card-icon" src="assets/icons/leadsquared.svg" alt="LeadSquared"/><div class="number">CRM</div><h3>LeadSquared</h3><p>Connect customer and lead activity with your CRM workflow.</p></div>
+<div class="card"><img class="card-icon" src="assets/icons/realtimekit.svg" alt="RealtimeKit"/><div class="number">REAL-TIME</div><h3>RealtimeKit</h3><p>Extend conversations into voice, video and screen-sharing experiences where supported by your implementation.</p></div>
+<div class="card"><img class="card-icon" src="assets/icons/dashboard.svg" alt="Dashboard Apps"/><div class="number">WORKSPACE</div><h3>Dashboard Apps</h3><p>Bring useful dashboards and internal tools closer to the conversations your teams are handling.</p></div>
+<div class="card"><img class="card-icon" src="assets/icons/automation.svg" alt="Automation Platforms"/><div class="number">ORCHESTRATION</div><h3>Automation platforms</h3><p>Connect tools such as Zapier, Make or custom workflow engines to coordinate business actions.</p></div>
+</div></div></section>
+<section class="section"><div class="container feature-split"><div><span class="eyebrow">Architecture</span><h2>Keep the communication layer in the middle.</h2><p class="subtitle">Your customers talk through channels. Your teams work in Chathood. Your business systems receive the events and data they need.</p></div><div class="architecture"><div class="arch-row"><div class="arch-box"><strong>Channels</strong><span>MESSAGING · WEB · EMAIL</span></div><div class="arch-arrow">→</div><div class="arch-box"><strong>Chathood</strong><span>CONVERSATIONS · ROUTING</span></div><div class="arch-arrow">→</div><div class="arch-box"><strong>Systems</strong><span>CRM · AI · AUTOMATION</span></div></div></div></div></section>
+<section class="section light"><div class="container"><div class="callout"><div><h3>Need a custom connection?</h3><p>Chathood is designed to work with APIs, webhooks and custom automation workflows.</p></div><a href="mailto:sales@chathood.io" class="btn">Talk to Sales</a></div></div></section></main>
+<footer class="footer"><div class="container footer-grid"><div class="footer-brand"><img src="assets/logo.png" alt="Chathood"/><p>Communication infrastructure for modern businesses.</p><p>support@chathood.io</p></div><div class="footer-col"><h4>Platform</h4><a href="/">Home</a><a href="/features">Features</a><a href="/integrations">Integrations</a></div><div class="footer-col"><h4>Company</h4><a href="/pricing">Pricing</a><a href="/privacy-policy/">Privacy Policy</a><a href="/terms/">Terms</a></div><div class="footer-col"><h4>Start</h4><a href="https://chathood.io/app/auth/signup">Get Started</a><a href="mailto:sales@chathood.io">Talk to Sales</a></div></div><div class="footer-bottom">© 2026 Chathood. All rights reserved.</div></footer>
+<script>(function(d,t){var BASE_URL="https://chathood.io";var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=BASE_URL+"/packs/js/sdk.js";g.async=true;s.parentNode.insertBefore(g,s);g.onload=function(){window.chatwootSDK.run({websiteToken:'ErPBKncrz8yw1uJPZHE6NNdm',baseUrl:BASE_URL})}})(document,"script");</script></body></html>
