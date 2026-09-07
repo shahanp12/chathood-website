@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="5720" height="88" viewBox="0 0 5720 88" role="img" aria-label="Business technology brands">
+<defs><style>.c{fill:#fff;stroke:#e1e9f2}.t{font:800 17px Arial,sans-serif;fill:#172033}</style></defs>
+<g id="set" transform="translate(18 8)">
+<g transform="translate(0)"><rect class="c" width="250" height="72" rx="18"/><image href="/assets/icons/googlecloud.svg" x="18" y="16" width="40" height="40"/><text class="t" x="72" y="45">Google Cloud</text></g>
+<g transform="translate(270)"><rect class="c" width="220" height="72" rx="18"/><circle cx="36" cy="36" r="18" fill="#0f6fa8"/><path d="M24 40c7-14 17-18 27-10-7 3-11 9-14 18Z" fill="#fff"/><text class="t" x="66" y="45">ACME Inc.</text></g>
+<g transform="translate(510)"><rect class="c" width="210" height="72" rx="18"/><circle cx="36" cy="36" r="18" fill="#172033"/><path d="M27 44 36 25l9 19-9-5Z" fill="#fff"/><text class="t" x="66" y="45">Nexora</text></g>
+<g transform="translate(740)"><rect class="c" width="220" height="72" rx="18"/><circle cx="36" cy="36" r="18" fill="#5b63e8"/><path d="M26 36c7-12 15-12 21 0-6 12-14 12-21 0Z" fill="#fff"/><text class="t" x="66" y="45">Cloudmint</text></g>
+<g transform="translate(980)"><rect class="c" width="210" height="72" rx="18"/><circle cx="36" cy="36" r="18" fill="#14a88a"/><path d="M25 44 36 25l11 19-11-5Z" fill="#fff"/><text class="t" x="66" y="45">OrbitIQ</text></g>
+<g transform="translate(1210)"><rect class="c" width="225" height="72" rx="18"/><circle cx="36" cy="36" r="18" fill="#f06b4f"/><path d="M25 42 36 27l11 15-11-4Z" fill="#fff"/><text class="t" x="66" y="45">BrightLayer</text></g>
+<g transform="translate(1455)"><rect class="c" width="210" height="72" rx="18"/><circle cx="36" cy="36" r="18" fill="#7b61ff"/><path d="M26 40 36 27l10 13-10 8Z" fill="#fff"/><text class="t" x="66" y="45">Vertexa</text></g>
+<g transform="translate(1685)"><rect class="c" width="210" height="72" rx="18"/><circle cx="36" cy="36" r="18" fill="#ef9d2f"/><path d="M25 43h22L36 27Z" fill="#fff"/><text class="t" x="66" y="45">Fluxera</text></g>
+<g transform="translate(1915)"><rect class="c" width="220" height="72" rx="18"/><circle cx="36" cy="36" r="18" fill="#2b7de9"/><path d="M27 43h18V29H27Z" fill="#fff"/><text class="t" x="66" y="45">HelioStack</text></g>
+<g transform="translate(2155)"><rect class="c" width="210" height="72" rx="18"/><circle cx="36" cy="36" r="18" fill="#16a36f"/><path d="M25 38h22v5H25Zm5-9h12v5H30Z" fill="#fff"/><text class="t" x="66" y="45">NovaOps</text></g>
+<g transform="translate(2385)"><rect class="c" width="220" height="72" rx="18"/><circle cx="36" cy="36" r="18" fill="#e55b9a"/><path d="M26 43h20L36 27Z" fill="#fff"/><text class="t" x="66" y="45">QuantumDesk</text></g>
+<g transform="translate(2625)"><rect class="c" width="215" height="72" rx="18"/><circle cx="36" cy="36" r="18" fill="#354052"/><path d="M27 44h18L36 27Z" fill="#fff"/><text class="t" x="66" y="45">PixelForge</text></g>
+</g>
+<use href="#set" x="2860"/>
+</svg>
