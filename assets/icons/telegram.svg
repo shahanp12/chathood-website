@@ -1,3 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-  <path fill="#229ED9" d="M256 48L0 144l73 22 28 90 45-52 69 50 41-206z"></path>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title"><title id="title">Telegram</title><circle cx="128" cy="128" r="116" fill="#229ED9"/><path fill="#fff" d="M55 126 202 70c7-3 13 3 10 10l-56 139c-3 7-13 7-17 1l-31-49-48-25c-8-4-8-16-5-20Zm52 33 21 33 8-50 48-54-91 57 38 14 14-18 12-6-50 35Z"/></svg>
