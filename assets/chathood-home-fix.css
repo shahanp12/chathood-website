@@ -26,6 +26,22 @@
 .channel-pill>span:nth-child(2) img[alt="API"]{order:11!important;margin-left:8px!important}
 .channel-pill>span:nth-child(2) img[alt="TikTok"]{order:12!important;width:22px!important;height:22px!important;margin-left:20px!important}
 
+/* Apply the same non-adjacent ordering to the bottom channel rail. */
+.channel-rail .channel{order:initial!important}
+.channel-rail .channel:has(img[src*="whatsapp.svg"]){order:1!important}
+.channel-rail .channel:has(img[src*="telegram.svg"]){order:2!important}
+.channel-rail .channel:has(img[src*="email.svg"]){order:3!important}
+.channel-rail .channel:has(img[src*="x.svg"]){order:4!important}
+.channel-rail .channel:has(img[src*="linkedin.svg"]){order:5!important}
+.channel-rail .channel:has(img[src*="facebook.svg"]){order:6!important}
+.channel-rail .channel:has(img[src*="line.svg"]){order:7!important}
+.channel-rail .channel:has(img[src*="instagram.svg"]){order:8!important}
+.channel-rail .channel:has(img[src*="sms.svg"]){order:9!important}
+.channel-rail .channel:has(img[src*="chat.svg"]){order:10!important}
+.channel-rail .channel:has(img[src*="api.svg"]){order:11!important}
+.channel-rail .channel:has(img[src*="tiktok.svg"]){order:12!important}
+.channel-rail .rail-label{order:0!important}
+
 /* 3) WhatsApp: use the WhatsApp green (#25D366) asset already used across the site, at a readable size. */
 .channel-rail .channel:has(img[src*="whatsapp.svg"]) img{width:26px!important;height:26px!important;max-width:26px!important;max-height:26px!important}
 .channel-pill img[src*="whatsapp.svg"]{object-fit:contain!important}
