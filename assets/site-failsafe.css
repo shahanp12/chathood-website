@@ -52,3 +52,7 @@
 .trust-logos:before{width:5720px!important;height:88px!important;background-repeat:no-repeat!important;background-position:0 0!important;background-size:5720px 88px!important;animation:chathoodTrustTrack 26s linear infinite!important;transform:translate3d(0,0,0)!important;will-change:transform!important}
 @keyframes chathoodTrustTrack{from{transform:translate3d(0,0,0)}to{transform:translate3d(-2860px,0,0)}}
 @media(max-width:700px){.trust-logos:before{width:5062px!important;height:78px!important;background-size:5062px 78px!important}.trust-logos{height:78px!important}@keyframes chathoodTrustTrack{from{transform:translate3d(0,0,0)}to{transform:translate3d(-2531px,0,0)}}}
+
+/* FEATURES INTEGRATION LOGO FIX — keep the real integration cards visible on all catalogue pages */
+.logo-showcase>.logo-tile{display:flex!important;visibility:visible!important;opacity:1!important}
+.logo-showcase>.logo-tile img{display:block!important;visibility:visible!important;opacity:1!important}
