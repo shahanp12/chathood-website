@@ -12,9 +12,60 @@
 .channel-pill{position:relative!important;padding-right:150px!important;min-height:42px!important}.channel-pill>span:nth-child(2) img[alt="X"],.channel-pill>span:nth-child(2) img[alt="TikTok"]{display:none!important}.channel-pill:after{content:''!important;position:absolute!important;right:16px!important;top:50%!important;transform:translateY(-50%)!important;width:112px!important;height:42px!important;background:url('/assets/icons/x-tiktok-separated.svg?v=20260916') center/112px 42px no-repeat!important}.channel-pill>span:nth-child(2) img[alt="API"]{margin-left:6px!important}
 .channel-rail .channel{order:initial!important}.channel-rail .channel:has(img[alt="LinkedIn"]){order:90!important}.channel-rail .channel:has(img[alt="X"]){order:91!important}.channel-rail .channel:has(img[alt="API"]){order:92!important}.channel-rail .channel:has(img[alt="TikTok"]){order:93!important}
 .footer-contact a:nth-child(1) img{content:url('/assets/icons/email-modern.svg?v=20260916')!important;width:26px!important;height:26px!important;max-width:26px!important;max-height:26px!important}.footer-contact a:nth-child(2) img{content:url('/assets/icons/phone-modern.svg?v=20260916')!important;width:26px!important;height:26px!important;max-width:26px!important;max-height:26px!important}.footer-contact a{gap:9px!important}.footer-contact .contact-label{min-width:35px!important}
-.footer-social a{width:42px!important;height:42px!important;border-radius:11px!important;padding:8px!important}.footer-social img{width:22px!important;height:22px!important;max-width:22px!important;max-height:22px!important;display:block!important}
 .logo-showcase{display:block!important;min-height:360px!important;margin-top:28px!important;border-radius:24px!important;overflow:hidden!important;background:#f7faff url('/assets/illustrations/integration-overview-15.svg?v=20260916') center top/100% auto no-repeat!important;border:0!important}.logo-showcase>.logo-tile{display:none!important}
 #integrations .cards>a.integration-card:nth-of-type(13){display:none!important}
 #integrations .cards>a.integration-card:nth-of-type(10) .card-icon{content:url('https://a.slack-edge.com/e6a93c1/img/icons/favicon-32.png')!important}
 @media(max-width:900px){.logo-showcase{min-height:540px!important;background-size:auto 540px!important;background-position:center top!important}.channel-pill{padding-right:126px!important}.channel-pill:after{right:10px!important;transform:translateY(-50%) scale(.9)!important;transform-origin:right center!important}}
-@media(max-width:700px){.channel-pill{padding-right:0!important}.channel-pill:after{display:none!important}.footer-social a{width:40px!important;height:40px!important}.footer-social img{width:21px!important;height:21px!important}.footer-contact a:nth-child(1) img,.footer-contact a:nth-child(2) img{width:24px!important;height:24px!important}.logo-showcase{min-height:900px!important;background-size:auto 900px!important}}
+@media(max-width:700px){.channel-pill{padding-right:0!important}.channel-pill:after{display:none!important}.footer-social a{width:40px!important;height:40px!important}.footer-social img{width:21px!important;height:21px!important;max-width:21px!important;max-height:21px!important}.logo-showcase{min-height:900px!important;background-size:auto 900px!important}}
+
+/* CHATHOOD GLOBAL CONSISTENCY PASS 2026-09-17 */
+:root{--max:1600px!important}
+.container{width:min(1600px,calc(100% - 64px))!important;margin-left:auto!important;margin-right:auto!important}
+.hero-grid{grid-template-columns:minmax(0,1.04fr) minmax(620px,.96fr)!important;gap:72px!important}
+.hero{padding-top:88px!important;padding-bottom:72px!important}
+.section>.container,.section.light>.container{width:min(1600px,calc(100% - 64px))!important}
+.section-head{max-width:1100px!important}
+.channel-rail-inner{gap:30px!important;justify-content:center!important}
+.channel-rail .channel{order:initial!important}
+.channel-rail .channel:has(img[src*="whatsapp.svg"]){order:1!important}
+.channel-rail .channel:has(img[src*="telegram.svg"]){order:2!important}
+.channel-rail .channel:has(img[src*="email.svg"]){order:3!important}
+.channel-rail .channel:has(img[src*="linkedin.svg"]){order:4!important}
+.channel-rail .channel:has(img[src*="facebook.svg"]){order:5!important}
+.channel-rail .channel:has(img[src*="line.svg"]){order:6!important}
+.channel-rail .channel:has(img[src*="instagram.svg"]){order:7!important}
+.channel-rail .channel:has(img[src*="sms.svg"]){order:8!important}
+.channel-rail .channel:has(img[src*="x.svg"]){order:9!important;margin-left:22px!important}
+.channel-rail .channel:has(img[src*="chat.svg"]){order:10!important;margin-left:18px!important}
+.channel-rail .channel:has(img[src*="api.svg"]){order:11!important;margin-left:10px!important}
+.channel-rail .channel:has(img[src*="tiktok.svg"]){order:12!important;margin-left:38px!important}
+.channel-rail .channel:has(img[src*="whatsapp.svg"]) img{width:26px!important;height:26px!important;max-width:26px!important;max-height:26px!important}
+.channel-rail .channel img{object-fit:contain!important}
+
+/* One consistent footer treatment across every page: bare social marks, no button squares. */
+.footer-social{gap:18px!important;margin:18px 0 14px!important}
+.footer-social a{width:32px!important;height:32px!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
+.footer-social img{width:32px!important;height:32px!important;max-width:32px!important;max-height:32px!important;object-fit:contain!important;display:block!important}
+.footer-social a:hover{background:transparent!important;transform:translateY(-2px)!important}
+.footer-contact a{min-height:30px!important;line-height:1.2!important;align-items:center!important}
+.footer-contact a img{width:26px!important;height:26px!important;max-width:26px!important;max-height:26px!important;flex:0 0 26px!important;margin:0!important;align-self:center!important;display:block!important}
+
+/* Integration overview typography: larger labels, stronger category captions, same Chathood font stack. */
+.logo-showcase{background:#f7faff url('/assets/illustrations/integration-overview-15.svg?v=20260917') center top/100% auto no-repeat!important}
+.logo-showcase .logo-tile strong{font-family:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI",Arial,sans-serif!important;font-size:16px!important;font-weight:800!important}
+.logo-showcase .logo-tile span{font-family:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI",Arial,sans-serif!important;font-size:11px!important;font-weight:800!important;letter-spacing:.08em!important}
+
+/* Homepage connected-channel pill: same separated X/TikTok treatment used everywhere else. */
+.channel-pill{padding-right:8px!important}
+.channel-pill>span:nth-child(2){display:flex!important;align-items:center!important;flex-wrap:nowrap!important}
+.channel-pill>span:nth-child(2) img{margin:0 5px!important;flex:0 0 auto!important}
+.channel-pill>span:nth-child(2) img[alt="X"]{order:9!important;width:22px!important;height:22px!important;margin-left:13px!important;margin-right:22px!important}
+.channel-pill>span:nth-child(2) img[alt="Website Chat"]{order:10!important}
+.channel-pill>span:nth-child(2) img[alt="API"]{order:11!important;margin-left:8px!important}
+.channel-pill>span:nth-child(2) img[alt="TikTok"]{order:12!important;width:22px!important;height:22px!important;margin-left:38px!important}
+.channel-pill>span:nth-child(2) img[alt="X"],.channel-pill>span:nth-child(2) img[alt="TikTok"]{display:block!important}
+.channel-pill:after{display:none!important}
+
+@media(max-width:1300px){.container{width:min(1400px,calc(100% - 56px))!important}.hero-grid{grid-template-columns:minmax(0,1fr) minmax(560px,.92fr)!important;gap:54px!important}.channel-rail-inner{gap:22px!important}}
+@media(max-width:980px){.container{width:calc(100% - 40px)!important}.hero-grid{grid-template-columns:1fr!important;gap:40px!important}.channel-rail-inner{justify-content:flex-start!important;overflow-x:auto!important}.channel-pill{overflow-x:auto!important}.logo-showcase{background-size:auto 540px!important;background-position:center top!important}}
+@media(max-width:700px){.container{width:calc(100% - 28px)!important}.channel-rail-inner{gap:18px!important}.channel-rail .channel:has(img[src*="x.svg"]){margin-left:8px!important}.channel-rail .channel:has(img[src*="tiktok.svg"]){margin-left:20px!important}.footer-social{gap:16px!important}.footer-social a,.footer-social img{width:30px!important;height:30px!important}.footer-contact a img{width:24px!important;height:24px!important;max-width:24px!important;max-height:24px!important;flex-basis:24px!important}}
