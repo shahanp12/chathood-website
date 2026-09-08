@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 40">
+<defs><style>.m{fill:none;stroke:#1768c7;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.f{fill:#1768c7}</style></defs>
+<symbol id="google" viewBox="0 0 40 40"><circle class="m" cx="20" cy="20" r="15"/><path class="m" d="M20 10v20M10 20h20"/></symbol>
+<symbol id="acme" viewBox="0 0 40 40"><path class="m" d="M8 29 20 8l12 21"/><path class="m" d="M13 22h14"/></symbol>
+<symbol id="nexora" viewBox="0 0 40 40"><path class="f" d="M8 30V10h5l14 13V10h5v20h-5L13 17v13z"/></symbol>
+<symbol id="cloudmint" viewBox="0 0 40 40"><path class="m" d="M10 28h20a6 6 0 0 0 0-12 10 10 0 0 0-19-1 6 6 0 0 0-1 13z"/></symbol>
+<symbol id="orbitiq" viewBox="0 0 40 40"><circle class="m" cx="20" cy="20" r="14"/><ellipse class="m" cx="20" cy="20" rx="14" ry="6"/><circle class="f" cx="20" cy="20" r="3"/></symbol>
+<symbol id="brightlayer" viewBox="0 0 40 40"><path class="f" d="m20 6 4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/></symbol>
+<symbol id="vertexa" viewBox="0 0 40 40"><path class="m" d="M7 10h26L20 31 7 10Z"/><path class="m" d="M14 10h12"/></symbol>
+<symbol id="fluxera" viewBox="0 0 40 40"><path class="m" d="M10 8h20M10 20h14M10 32h20"/><circle class="f" cx="29" cy="20" r="4"/></symbol>
+<symbol id="heliostack" viewBox="0 0 40 40"><path class="m" d="M20 7v26M7 20h26"/><circle class="m" cx="20" cy="20" r="12"/></symbol>
+<symbol id="novaops" viewBox="0 0 40 40"><path class="f" d="M20 6 23.5 16 34 20l-10.5 4L20 34l-3.5-10L6 20l10.5-4z"/></symbol>
+<symbol id="quantumdesk" viewBox="0 0 40 40"><rect class="m" x="8" y="8" width="24" height="24" rx="5"/><path class="m" d="m15 15 10 10M25 15 15 25"/></symbol>
+<symbol id="pixelforge" viewBox="0 0 40 40"><path class="f" d="M8 8h9v9H8zM23 8h9v9h-9zM8 23h9v9H8zM23 23h9v9h-9z"/></symbol>
+</svg>
