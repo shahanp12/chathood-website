@@ -21,10 +21,22 @@
 .channel-pill>span:nth-child(2) img[alt="X"],.channel-pill>span:nth-child(2) img[alt="TikTok"]{display:block!important}
 .channel-pill:after{display:none!important;content:none!important}
 
-/* 3) CHANNEL RAIL — one uniform gap from the first channel through the last; remove legacy extra margins. */
+/* 3) CHANNEL RAIL — match the other pages exactly: X → Website Chat → API → TikTok. */
 .channel-rail-inner{display:flex!important;align-items:center!important;justify-content:center!important;gap:24px!important;white-space:nowrap!important}
 .channel-rail .channel{order:initial!important;margin-left:0!important;margin-right:0!important;display:flex!important;align-items:center!important;gap:8px!important}
 .channel-rail .channel:has(img[src*="whatsapp.svg"]),.channel-rail .channel:has(img[src*="telegram.svg"]),.channel-rail .channel:has(img[src*="email.svg"]),.channel-rail .channel:has(img[src*="linkedin.svg"]),.channel-rail .channel:has(img[src*="facebook.svg"]),.channel-rail .channel:has(img[src*="line.svg"]),.channel-rail .channel:has(img[src*="instagram.svg"]),.channel-rail .channel:has(img[src*="sms.svg"]),.channel-rail .channel:has(img[src*="x.svg"]),.channel-rail .channel:has(img[src*="chat.svg"]),.channel-rail .channel:has(img[src*="api.svg"]),.channel-rail .channel:has(img[src*="tiktok.svg"]){order:initial!important;margin-left:0!important;margin-right:0!important}
+.channel-rail .channel:has(img[src*="whatsapp.svg"]){order:1!important}
+.channel-rail .channel:has(img[src*="telegram.svg"]){order:2!important}
+.channel-rail .channel:has(img[src*="facebook.svg"]){order:3!important}
+.channel-rail .channel:has(img[src*="instagram.svg"]){order:4!important}
+.channel-rail .channel:has(img[src*="email.svg"]){order:5!important}
+.channel-rail .channel:has(img[src*="sms.svg"]){order:6!important}
+.channel-rail .channel:has(img[src*="line.svg"]){order:7!important}
+.channel-rail .channel:has(img[src*="chat.svg"]){order:8!important}
+.channel-rail .channel:has(img[src*="linkedin.svg"]){order:9!important}
+.channel-rail .channel:has(img[src*="x.svg"]){order:10!important}
+.channel-rail .channel:has(img[src*="api.svg"]){order:11!important}
+.channel-rail .channel:has(img[src*="tiktok.svg"]){order:12!important}
 .channel-rail .channel img{width:24px!important;height:24px!important;max-width:24px!important;max-height:24px!important;object-fit:contain!important}
 .channel-rail .channel:has(img[src*="whatsapp.svg"]) img{width:26px!important;height:26px!important;max-width:26px!important;max-height:26px!important}
 
