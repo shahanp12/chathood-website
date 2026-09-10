@@ -1,21 +1,30 @@
-/* Chathood homepage final correction layer — 2026-09-08 */
+/* Chathood homepage final correction layer — 2026-09-10 */
 
-/* Trust marquee: the duplicated DOM sets move together continuously. */
-.trust-logos{position:relative!important;display:block!important;width:100%!important;overflow:hidden!important}
-.trust-logos:before,.trust-logos:after{display:none!important;content:none!important}
-.trust-marquee-track{display:flex!important;align-items:center!important;width:max-content!important;max-width:none!important;height:100%!important;transform:translate3d(0,0,0)!important;animation:chathoodTrustFinalMove 9s linear infinite!important;animation-play-state:running!important;will-change:transform!important}
+/* 1) TRUSTED BUSINESS MARQUEE — real DOM track, continuous horizontal movement. */
+.trust-logos{position:relative!important;display:block!important;width:100%!important;height:88px!important;overflow:hidden!important;margin-top:24px!important}
+.trust-logos:before,.trust-logos:after{display:none!important;content:none!important;background:none!important;animation:none!important}
+.trust-marquee-track{display:flex!important;align-items:center!important;width:max-content!important;max-width:none!important;height:100%!important;will-change:transform!important;animation:chathoodTrustContinuous 15s linear infinite!important;animation-play-state:running!important;transform:translate3d(0,0,0)}
 .trust-marquee-set{display:flex!important;align-items:center!important;flex:0 0 auto!important;gap:18px!important;padding-right:18px!important}
-.trust-marquee-item{display:inline-flex!important;flex:0 0 auto!important;align-items:center!important;justify-content:center!important;min-width:145px!important;height:54px!important;padding:0 10px!important;gap:8px!important;white-space:nowrap!important;visibility:visible!important;opacity:1!important}
-.trust-marquee-item.google-cloud{min-width:158px!important}
+.trust-marquee-item{display:inline-flex!important;flex:0 0 145px!important;align-items:center!important;justify-content:center!important;height:54px!important;padding:0 10px!important;box-sizing:border-box!important;gap:8px!important;white-space:nowrap!important;visibility:visible!important;opacity:1!important}
+.trust-marquee-item.google-cloud{flex-basis:158px!important}
 .trust-logo-mark{display:block!important;visibility:visible!important;opacity:1!important;width:26px!important;height:26px!important;flex:0 0 26px!important}
-.trust-marquee-track:hover{animation-play-state:running!important}
-@keyframes chathoodTrustFinalMove{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
+@keyframes chathoodTrustContinuous{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
 
-/* Hero connected channels: X/API/TikTok are no longer artificially separated. */
-.channel-pill>span:nth-child(2) img[alt="X"]{margin-left:8px!important;margin-right:5px!important}
-.channel-pill>span:nth-child(2) img[alt="Website Chat"]{margin-left:5px!important;margin-right:5px!important}
-.channel-pill>span:nth-child(2) img[alt="API"]{margin-left:5px!important;margin-right:5px!important}
-.channel-pill>span:nth-child(2) img[alt="TikTok"]{margin-left:6px!important;margin-right:5px!important;width:22px!important;height:22px!important}
+/* 2) HERO CONNECTED CHANNELS — X, messages, API and TikTok sit together with equal spacing. */
+.channel-pill>span:nth-child(2){display:flex!important;align-items:center!important;flex-wrap:nowrap!important;gap:8px!important}
+.channel-pill>span:nth-child(2) img{margin:0!important;flex:0 0 auto!important}
+.channel-pill>span:nth-child(2) img[alt="SMS"]{order:8!important}
+.channel-pill>span:nth-child(2) img[alt="X"]{order:9!important;width:22px!important;height:22px!important}
+.channel-pill>span:nth-child(2) img[alt="Website Chat"]{order:10!important}
+.channel-pill>span:nth-child(2) img[alt="API"]{order:11!important}
+.channel-pill>span:nth-child(2) img[alt="TikTok"]{order:12!important;width:22px!important;height:22px!important}
+.channel-pill>span:nth-child(2) img[alt="X"],.channel-pill>span:nth-child(2) img[alt="TikTok"]{display:block!important}
+.channel-pill:after{display:none!important;content:none!important}
+
+/* 3) WHATSAPP — local SVG only; no remote image dependency. */
+.channel-pill img[alt="WhatsApp"],.channel-rail img[src*="whatsapp.svg"]{content:url('/assets/icons/whatsapp.svg?v=20260910')!important;display:block!important;visibility:visible!important;opacity:1!important;object-fit:contain!important}
+.channel-pill img[alt="WhatsApp"]{width:22px!important;height:22px!important}
+.channel-rail .channel:has(img[src*="whatsapp.svg"]) img{width:26px!important;height:26px!important;max-width:26px!important;max-height:26px!important}
 
 /* Keep the homepage integration catalogue visible. */
 .logo-showcase{display:grid!important;visibility:visible!important;opacity:1!important}
@@ -24,7 +33,9 @@
 .logo-showcase .logo-tile img[alt="Slack"]{content:url('/assets/icons/slack.svg?v=20260908')!important}
 
 @media(max-width:700px){
-  .trust-marquee-track{animation-duration:7s!important}
-  .trust-marquee-item{min-width:150px!important}
-  .channel-pill>span:nth-child(2) img[alt="TikTok"]{margin-left:6px!important}
+  .trust-logos{height:78px!important}
+  .trust-marquee-track{animation-duration:11s!important}
+  .trust-marquee-item{flex-basis:150px!important;height:54px!important}
+  .trust-marquee-item.google-cloud{flex-basis:158px!important}
+  .channel-pill>span:nth-child(2){gap:7px!important}
 }
