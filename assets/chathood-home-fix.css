@@ -10,14 +10,14 @@
 .trust-logo-mark{display:block!important;visibility:visible!important;opacity:1!important;width:26px!important;height:26px!important;flex:0 0 26px!important}
 @keyframes chathoodTrustExactLoop{from{transform:translate3d(0,0,0)}to{transform:translate3d(-1969px,0,0)}}
 
-/* 2) HERO CONNECTED CHANNELS — every icon uses one equal gap; no hidden/pseudo replacement. */
-.channel-pill>span:nth-child(2){display:flex!important;align-items:center!important;flex-wrap:nowrap!important;justify-content:flex-start!important;gap:8px!important}
-.channel-pill>span:nth-child(2) img{margin:0!important;flex:0 0 auto!important}
+/* 2) HERO CONNECTED CHANNELS — use one fixed 22px icon box and one 6px visual gap for every channel. */
+.channel-pill>span:nth-child(2){display:flex!important;align-items:center!important;flex-wrap:nowrap!important;justify-content:flex-start!important;gap:6px!important}
+.channel-pill>span:nth-child(2) img{margin:0!important;flex:0 0 22px!important;width:22px!important;height:22px!important;max-width:22px!important;max-height:22px!important;object-fit:contain!important}
 .channel-pill>span:nth-child(2) img[alt="SMS"]{order:8!important}
-.channel-pill>span:nth-child(2) img[alt="X"]{order:9!important;width:22px!important;height:22px!important}
+.channel-pill>span:nth-child(2) img[alt="X"]{order:9!important}
 .channel-pill>span:nth-child(2) img[alt="Website Chat"]{order:10!important}
-.channel-pill>span:nth-child(2) img[alt="API"]{order:11!important;width:20px!important;height:20px!important}
-.channel-pill>span:nth-child(2) img[alt="TikTok"]{order:12!important;width:22px!important;height:22px!important}
+.channel-pill>span:nth-child(2) img[alt="API"]{order:11!important}
+.channel-pill>span:nth-child(2) img[alt="TikTok"]{order:12!important}
 .channel-pill>span:nth-child(2) img[alt="X"],.channel-pill>span:nth-child(2) img[alt="TikTok"]{display:block!important}
 .channel-pill:after{display:none!important;content:none!important}
 
@@ -36,13 +36,14 @@
 .logo-showcase{display:grid!important;visibility:visible!important;opacity:1!important;background-image:none!important}
 .logo-showcase>.logo-tile{display:flex!important;visibility:visible!important;opacity:1!important}
 .logo-showcase>.logo-tile img{display:block!important;visibility:visible!important;opacity:1!important}
-.logo-showcase .logo-tile img[alt="Slack"]{content:url('/assets/icons/slack.svg?v=20260908')!important}
+.logo-showcase .logo-tile img[alt="Slack"]{content:url('/assets/icons/slack.svg?v=20260911')!important}
 
 @media(max-width:1300px){.channel-rail-inner{gap:20px!important}}
 @media(max-width:980px){.channel-rail-inner{justify-content:flex-start!important;overflow-x:auto!important}.channel-pill{overflow-x:auto!important}}
 @media(max-width:700px){
   .trust-logos{height:78px!important}
   .trust-marquee-track{animation-duration:11s!important}
-  .channel-pill>span:nth-child(2){gap:7px!important}
+  .channel-pill>span:nth-child(2){gap:5px!important}
+  .channel-pill>span:nth-child(2) img{flex-basis:20px!important;width:20px!important;height:20px!important;max-width:20px!important;max-height:20px!important}
   .channel-rail-inner{gap:18px!important}
 }
