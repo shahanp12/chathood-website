@@ -1,4 +1,4 @@
-/* Chathood homepage final correction layer — 2026-09-11 */
+/* Chathood homepage final correction layer — 2026-09-17 */
 
 /* 1) TRUSTED BUSINESS MARQUEE — two identical fixed-width sets, one exact loop distance. */
 .trust-logos{position:relative!important;display:block!important;width:100%!important;height:88px!important;overflow:hidden!important;margin-top:24px!important}
@@ -10,33 +10,27 @@
 .trust-logo-mark{display:block!important;visibility:visible!important;opacity:1!important;width:26px!important;height:26px!important;flex:0 0 26px!important}
 @keyframes chathoodTrustExactLoop{from{transform:translate3d(0,0,0)}to{transform:translate3d(-1969px,0,0)}}
 
-/* 2) HERO CONNECTED CHANNELS — use one fixed 22px icon box and one 6px visual gap for every channel. */
-.channel-pill>span:nth-child(2){display:flex!important;align-items:center!important;flex-wrap:nowrap!important;justify-content:flex-start!important;gap:6px!important}
-.channel-pill>span:nth-child(2) img{margin:0!important;flex:0 0 22px!important;width:22px!important;height:22px!important;max-width:22px!important;max-height:22px!important;object-fit:contain!important}
-.channel-pill>span:nth-child(2) img[alt="SMS"]{order:8!important}
-.channel-pill>span:nth-child(2) img[alt="X"]{order:9!important}
-.channel-pill>span:nth-child(2) img[alt="Website Chat"]{order:10!important}
-.channel-pill>span:nth-child(2) img[alt="API"]{order:11!important}
-.channel-pill>span:nth-child(2) img[alt="TikTok"]{order:12!important}
-.channel-pill>span:nth-child(2) img[alt="X"],.channel-pill>span:nth-child(2) img[alt="TikTok"]{display:block!important}
+/* 2) HERO CONNECTED CHANNELS — twelve equal icon cells with one exact gap. */
+.channel-pill>span:nth-child(2){display:grid!important;grid-template-columns:repeat(12,22px)!important;grid-auto-rows:22px!important;align-items:center!important;justify-content:start!important;column-gap:6px!important;row-gap:0!important;flex-wrap:nowrap!important}
+.channel-pill>span:nth-child(2) img{margin:0!important;display:block!important;position:static!important;flex:0 0 22px!important;width:22px!important;height:22px!important;max-width:22px!important;max-height:22px!important;object-fit:contain!important}
+.channel-pill>span:nth-child(2) img[alt="WhatsApp"]{grid-column:1!important}
+.channel-pill>span:nth-child(2) img[alt="Telegram"]{grid-column:2!important}
+.channel-pill>span:nth-child(2) img[alt="Facebook"]{grid-column:3!important}
+.channel-pill>span:nth-child(2) img[alt="Instagram"]{grid-column:4!important}
+.channel-pill>span:nth-child(2) img[alt="Email"]{grid-column:5!important}
+.channel-pill>span:nth-child(2) img[alt="SMS"]{grid-column:6!important}
+.channel-pill>span:nth-child(2) img[alt="LINE"]{grid-column:7!important}
+.channel-pill>span:nth-child(2) img[alt="Website Chat"]{grid-column:8!important}
+.channel-pill>span:nth-child(2) img[alt="LinkedIn"]{grid-column:9!important}
+.channel-pill>span:nth-child(2) img[alt="X"]{grid-column:10!important;width:22px!important;height:22px!important;margin:0!important;display:block!important}
+.channel-pill>span:nth-child(2) img[alt="API"]{grid-column:11!important;margin:0!important}
+.channel-pill>span:nth-child(2) img[alt="TikTok"]{grid-column:12!important;width:22px!important;height:22px!important;margin:0!important;display:block!important}
 .channel-pill:after{display:none!important;content:none!important}
 
-/* 3) CHANNEL RAIL — match the other pages exactly: X → Website Chat → API → TikTok. */
+/* 3) CHANNEL RAIL — uniform icon/text spacing; no special offsets on the final channels. */
 .channel-rail-inner{display:flex!important;align-items:center!important;justify-content:center!important;gap:24px!important;white-space:nowrap!important}
 .channel-rail .channel{order:initial!important;margin-left:0!important;margin-right:0!important;display:flex!important;align-items:center!important;gap:8px!important}
 .channel-rail .channel:has(img[src*="whatsapp.svg"]),.channel-rail .channel:has(img[src*="telegram.svg"]),.channel-rail .channel:has(img[src*="email.svg"]),.channel-rail .channel:has(img[src*="linkedin.svg"]),.channel-rail .channel:has(img[src*="facebook.svg"]),.channel-rail .channel:has(img[src*="line.svg"]),.channel-rail .channel:has(img[src*="instagram.svg"]),.channel-rail .channel:has(img[src*="sms.svg"]),.channel-rail .channel:has(img[src*="x.svg"]),.channel-rail .channel:has(img[src*="chat.svg"]),.channel-rail .channel:has(img[src*="api.svg"]),.channel-rail .channel:has(img[src*="tiktok.svg"]){order:initial!important;margin-left:0!important;margin-right:0!important}
-.channel-rail .channel:has(img[src*="whatsapp.svg"]){order:1!important}
-.channel-rail .channel:has(img[src*="telegram.svg"]){order:2!important}
-.channel-rail .channel:has(img[src*="facebook.svg"]){order:3!important}
-.channel-rail .channel:has(img[src*="instagram.svg"]){order:4!important}
-.channel-rail .channel:has(img[src*="email.svg"]){order:5!important}
-.channel-rail .channel:has(img[src*="sms.svg"]){order:6!important}
-.channel-rail .channel:has(img[src*="line.svg"]){order:7!important}
-.channel-rail .channel:has(img[src*="chat.svg"]){order:8!important}
-.channel-rail .channel:has(img[src*="linkedin.svg"]){order:9!important}
-.channel-rail .channel:has(img[src*="x.svg"]){order:10!important}
-.channel-rail .channel:has(img[src*="api.svg"]){order:11!important}
-.channel-rail .channel:has(img[src*="tiktok.svg"]){order:12!important}
 .channel-rail .channel img{width:24px!important;height:24px!important;max-width:24px!important;max-height:24px!important;object-fit:contain!important}
 .channel-rail .channel:has(img[src*="whatsapp.svg"]) img{width:26px!important;height:26px!important;max-width:26px!important;max-height:26px!important}
 
@@ -50,18 +44,12 @@
 .logo-showcase>.logo-tile img{display:block!important;visibility:visible!important;opacity:1!important}
 .logo-showcase .logo-tile img[alt="Slack"]{content:url('/assets/icons/slack.svg?v=20260911')!important}
 
-/* 5) HERO PRODUCT — larger, centred, upright and fully contained. */
+/* 5) HERO PRODUCT — render the same current Chathood artwork on-page as when opened directly. */
 .hero-grid{grid-template-columns:minmax(0,.82fr) minmax(560px,1.18fr)!important;gap:44px!important}
 .hero .hero-product{width:100%!important;max-width:720px!important;margin:0 auto!important;transform:none!important}
-.hero .hero-illustration{display:block!important;width:100%!important;height:auto!important;max-width:none!important;object-fit:contain!important}
+.hero .hero-illustration{content:url('/assets/illustrations/chathood-inbox-panel-vintage.svg?v=20260917')!important;display:block!important;width:100%!important;height:auto!important;max-width:none!important;object-fit:contain!important;filter:none!important;image-rendering:auto!important;opacity:1!important;transform:none!important}
+.hero .hero-product,.hero .hero-illustration{backface-visibility:visible!important;-webkit-backface-visibility:visible!important}
 
 @media(max-width:1300px){.channel-rail-inner{gap:20px!important}.hero-grid{grid-template-columns:minmax(0,.8fr) minmax(500px,1.2fr)!important;gap:32px!important}}
-@media(max-width:980px){.channel-rail-inner{justify-content:flex-start!important;overflow-x:auto!important}.channel-pill{overflow-x:auto!important}.hero-grid{grid-template-columns:1fr!important}.hero .hero-product{max-width:900px!important}}
-@media(max-width:700px){
-  .trust-logos{height:78px!important}
-  .trust-marquee-track{animation-duration:11s!important}
-  .channel-pill>span:nth-child(2){gap:5px!important}
-  .channel-pill>span:nth-child(2) img{flex-basis:20px!important;width:20px!important;height:20px!important;max-width:20px!important;max-height:20px!important}
-  .channel-rail-inner{gap:18px!important}
-  .hero .hero-product{max-width:100%!important}
-}
+@media(max-width:980px){.channel-rail-inner{justify-content:flex-start!important;overflow-x:auto!important}.channel-pill{overflow-x:auto!important}.hero-grid{grid-template-columns:1fr!important}.hero .hero-product{max-width:900px!important}.channel-pill>span:nth-child(2){grid-template-columns:repeat(12,20px)!important;column-gap:5px!important}.channel-pill>span:nth-child(2) img{width:20px!important;height:20px!important;max-width:20px!important;max-height:20px!important}}
+@media(max-width:700px){.trust-logos{height:78px!important}.trust-marquee-track{animation-duration:11s!important}.channel-rail-inner{gap:18px!important}.hero .hero-product{max-width:100%!important}.channel-pill>span:nth-child(2){grid-template-columns:repeat(12,20px)!important;column-gap:5px!important}}
