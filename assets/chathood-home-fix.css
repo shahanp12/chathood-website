@@ -50,12 +50,18 @@
 .logo-showcase>.logo-tile img{display:block!important;visibility:visible!important;opacity:1!important}
 .logo-showcase .logo-tile img[alt="Slack"]{content:url('/assets/icons/slack.svg?v=20260911')!important}
 
-@media(max-width:1300px){.channel-rail-inner{gap:20px!important}}
-@media(max-width:980px){.channel-rail-inner{justify-content:flex-start!important;overflow-x:auto!important}.channel-pill{overflow-x:auto!important}}
+/* 5) HERO PRODUCT — larger, centred, upright and fully contained. */
+.hero-grid{grid-template-columns:minmax(0,.82fr) minmax(560px,1.18fr)!important;gap:44px!important}
+.hero .hero-product{width:100%!important;max-width:720px!important;margin:0 auto!important;transform:none!important}
+.hero .hero-illustration{display:block!important;width:100%!important;height:auto!important;max-width:none!important;object-fit:contain!important}
+
+@media(max-width:1300px){.channel-rail-inner{gap:20px!important}.hero-grid{grid-template-columns:minmax(0,.8fr) minmax(500px,1.2fr)!important;gap:32px!important}}
+@media(max-width:980px){.channel-rail-inner{justify-content:flex-start!important;overflow-x:auto!important}.channel-pill{overflow-x:auto!important}.hero-grid{grid-template-columns:1fr!important}.hero .hero-product{max-width:900px!important}}
 @media(max-width:700px){
   .trust-logos{height:78px!important}
   .trust-marquee-track{animation-duration:11s!important}
   .channel-pill>span:nth-child(2){gap:5px!important}
   .channel-pill>span:nth-child(2) img{flex-basis:20px!important;width:20px!important;height:20px!important;max-width:20px!important;max-height:20px!important}
   .channel-rail-inner{gap:18px!important}
+  .hero .hero-product{max-width:100%!important}
 }
